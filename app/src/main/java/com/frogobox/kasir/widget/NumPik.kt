@@ -1,42 +1,37 @@
-package com.frogobox.kasir.widget;
+package com.frogobox.kasir.widget
 
-import android.content.*;
-import android.util.*;
-import android.view.*;
-import android.widget.*;
-import android.graphics.*;
+import android.content.Context
+import android.graphics.Color
+import android.graphics.Typeface
+import android.util.AttributeSet
+import android.view.View
+import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.NumberPicker
+import android.widget.TextView
 
-public class NumPik extends android.widget.NumberPicker {
-
-    public NumPik(Context context, AttributeSet attrs) {
-        super(context, attrs);
+class NumPik(context: Context?, attrs: AttributeSet?) : NumberPicker(context, attrs) {
+    override fun addView(child: View) {
+        super.addView(child)
+        updateView(child)
     }
 
-    @Override
-    public void addView(View child) {
-        super.addView(child);
-        updateView(child);
+    override fun addView(child: View, index: Int, params: ViewGroup.LayoutParams) {
+        super.addView(child, index, params)
+        updateView(child)
     }
 
-    @Override
-    public void addView(View child, int index, android.view.ViewGroup.LayoutParams params) {
-        super.addView(child, index, params);
-        updateView(child);
+    override fun addView(child: View, params: ViewGroup.LayoutParams) {
+        super.addView(child, params)
+        updateView(child)
     }
 
-    @Override
-    public void addView(View child, android.view.ViewGroup.LayoutParams params) {
-        super.addView(child, params);
-        updateView(child);
-    }
-
-    private void updateView(View view) {
-        if (view instanceof EditText) {
-            TextView txt = (EditText) view;
-            txt.setTextSize(25);
-            txt.setTypeface(null, Typeface.BOLD);
-            txt.setTextColor(Color.parseColor("#333333"));
+    private fun updateView(view: View) {
+        if (view is EditText) {
+            val txt: TextView = view
+            txt.textSize = 25f
+            txt.setTypeface(null, Typeface.BOLD)
+            txt.setTextColor(Color.parseColor("#333333"))
         }
     }
-
 }

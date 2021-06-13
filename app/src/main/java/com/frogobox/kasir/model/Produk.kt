@@ -1,83 +1,40 @@
-package com.frogobox.kasir.model;
+package com.frogobox.kasir.model
 
-import java.util.*;
+import android.content.Context
+import com.frogobox.kasir.DBHelper
+import java.util.*
 
-import android.database.*;
+class Produk(var nama: String, var sn: String, var harga: Long, var stok: Int) {
 
-import com.frogobox.kasir.*;
-
-import android.content.*;
-
-public class Produk {
-    protected String nama;
-    protected String sn;
-    protected long harga;
-    protected int stok;
-
-    public Produk(String nama, String sn, long harga, int stok) {
-        this.nama = nama;
-        this.sn = sn;
-        this.harga = harga;
-        this.stok = stok;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public int getStok() {
-        return stok;
-    }
-
-    public void setStok(int stok) {
-        this.stok = stok;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public void setSn(String sn) {
-        this.sn = sn;
-    }
-
-    public String getSn() {
-        return sn;
-    }
-
-    public void setHarga(long harga) {
-        this.harga = harga;
-    }
-
-    public long getHarga() {
-        return harga;
-    }
-
-    public static Produk getBySN(Context ctx, String SN) {
-        Cursor cur = new DBHelper(ctx).baca(SN);
-        if (!cur.moveToFirst()) return null;
-        if (cur.getCount() < 1) {
-            return null;
+    companion object {
+        @JvmStatic
+        fun getBySN(ctx: Context?, SN: String?): Produk? {
+            val cur = DBHelper(ctx).baca(SN)
+            if (!cur.moveToFirst()) return null
+            if (cur.count < 1) {
+                return null
+            }
+            val nama = cur.getString(cur.getColumnIndex("nama"))
+            val sn = cur.getString(cur.getColumnIndex("sn"))
+            val harga = cur.getLong(cur.getColumnIndex("harga"))
+            val stok = cur.getInt(cur.getColumnIndex("stok"))
+            return Produk(nama, sn, harga, stok)
         }
-        String nama = cur.getString(cur.getColumnIndex("nama"));
-        String sn = cur.getString(cur.getColumnIndex("sn"));
-        long harga = cur.getLong(cur.getColumnIndex("harga"));
-        int stok = cur.getInt(cur.getColumnIndex("stok"));
-        return new Produk(nama, sn, harga, stok);
-    }
 
-    public static ArrayList<Produk> getInit(Context ctx) {
-        ArrayList<Produk> prod = new ArrayList<Produk>();
-        Cursor cur = new DBHelper(ctx).semuaData();
-        cur.moveToFirst();
-        for (int i = 0; i < cur.getCount(); i++) {
-            cur.moveToPosition(i);
-            String nama = cur.getString(cur.getColumnIndex("nama"));
-            String sn = cur.getString(cur.getColumnIndex("sn"));
-            long harga = cur.getLong(cur.getColumnIndex("harga"));
-            int stok = cur.getInt(cur.getColumnIndex("stok"));
-            prod.add(new Produk(nama, sn, harga, stok));
+        @JvmStatic
+        fun getInit(ctx: Context?): ArrayList<Produk> {
+            val prod = ArrayList<Produk>()
+            val cur = DBHelper(ctx).semuaData()
+            cur.moveToFirst()
+            for (i in 0 until cur.count) {
+                cur.moveToPosition(i)
+                val nama = cur.getString(cur.getColumnIndex("nama"))
+                val sn = cur.getString(cur.getColumnIndex("sn"))
+                val harga = cur.getLong(cur.getColumnIndex("harga"))
+                val stok = cur.getInt(cur.getColumnIndex("stok"))
+                prod.add(Produk(nama, sn, harga, stok))
+            }
+            return prod
         }
-        return prod;
     }
 }
