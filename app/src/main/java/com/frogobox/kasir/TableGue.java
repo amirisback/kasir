@@ -1,8 +1,8 @@
-package com.agusibrahim.appkasir;
+package com.frogobox.kasir;
 
 import de.codecrafters.tableview.*;
 
-import com.agusibrahim.appkasir.Model.*;
+import com.frogobox.kasir.model.*;
 
 import android.content.*;
 import android.util.*;

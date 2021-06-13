@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir.Widget;
+package com.frogobox.kasir.widget;
 import android.content.*;
 import android.view.*;
 import android.widget.*;
@@ -7,12 +7,12 @@ import android.view.inputmethod.*;
 import java.util.*;
 import com.google.zxing.*;
 import android.text.*;
-import com.agusibrahim.appkasir.Model.*;
+import com.frogobox.kasir.model.*;
 import androidx.appcompat.app.AlertDialog;
-import com.agusibrahim.appkasir.Adapter.*;
+import com.frogobox.kasir.adapter.*;
 import android.os.*;
-import com.agusibrahim.appkasir.Fragment.*;
-import com.agusibrahim.appkasir.*;
+import com.frogobox.kasir.fragment.*;
+import com.frogobox.kasir.*;
 
 public class InputProdukScanner {
 	Context ctx;

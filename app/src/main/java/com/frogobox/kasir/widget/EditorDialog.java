@@ -1,18 +1,17 @@
-package com.agusibrahim.appkasir.Widget;
+package com.frogobox.kasir.widget;
 
 import android.content.*;
 
-import com.agusibrahim.appkasir.*;
+import com.frogobox.kasir.*;
 
 import android.view.*;
 import android.widget.*;
 
-import com.agusibrahim.appkasir.Adapter.*;
+import com.frogobox.kasir.adapter.*;
 
 import androidx.appcompat.app.*;
-import androidx.core.app.*;
 
-import com.agusibrahim.appkasir.Model.*;
+import com.frogobox.kasir.model.*;
 
 public class EditorDialog {
     public EditorDialog(Context ctx, final Belanjaan bel, final TextView totalbelanja) {

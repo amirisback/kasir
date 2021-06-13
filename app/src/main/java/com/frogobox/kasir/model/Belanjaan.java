@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir.Model;
+package com.frogobox.kasir.model;
 
 public class Belanjaan {
     protected Produk produk;

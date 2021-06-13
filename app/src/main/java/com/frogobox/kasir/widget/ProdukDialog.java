@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir.Widget;
+package com.frogobox.kasir.widget;
 
 import android.content.*;
 
@@ -7,11 +7,11 @@ import androidx.appcompat.app.*;
 import android.view.*;
 import android.widget.*;
 
-import com.agusibrahim.appkasir.Model.*;
+import com.frogobox.kasir.model.*;
 
 import android.text.*;
 
-import com.agusibrahim.appkasir.*;
+import com.frogobox.kasir.*;
 
 public class ProdukDialog {
     public ProdukDialog(final Context ctx, final Produk dataset) {

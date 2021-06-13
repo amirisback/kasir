@@ -1,13 +1,13 @@
-package com.agusibrahim.appkasir.Fragment;
+package com.frogobox.kasir.fragment;
 import android.os.*;
 import android.view.*;
-import com.agusibrahim.appkasir.*;
-import com.agusibrahim.appkasir.Adapter.*;
+import com.frogobox.kasir.*;
+import com.frogobox.kasir.adapter.*;
 
 import android.widget.*;
-import com.agusibrahim.appkasir.Widget.*;
+import com.frogobox.kasir.widget.*;
 import de.codecrafters.tableview.listeners.*;
-import com.agusibrahim.appkasir.Model.*;
+import com.frogobox.kasir.model.*;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 

@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir.Widget;
+package com.frogobox.kasir.widget;
 
 import android.content.*;
 import android.util.*;

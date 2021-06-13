@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir.Adapter;
+package com.frogobox.kasir.adapter;
 
 import de.codecrafters.tableview.*;
 
@@ -6,14 +6,14 @@ import android.view.*;
 
 import java.util.*;
 
-import com.agusibrahim.appkasir.Model.*;
+import com.frogobox.kasir.model.*;
 
 import android.content.*;
 import android.widget.*;
 
 import java.text.*;
 
-import com.agusibrahim.appkasir.*;
+import com.frogobox.kasir.*;
 
 public class ProdukDataAdapter extends TableDataAdapter {
     public static final NumberFormat PRICE_FORMATTER = NumberFormat.getNumberInstance();

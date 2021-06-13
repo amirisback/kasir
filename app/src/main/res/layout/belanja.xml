@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <com.agusibrahim.appkasir.TabelBelanjaan xmlns:table="http://schemas.android.com/apk/res-auto"
+    <com.frogobox.kasir.TabelBelanjaan xmlns:table="http://schemas.android.com/apk/res-auto"
         android:id="@+id/belanjaan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

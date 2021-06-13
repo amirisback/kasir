@@ -1,9 +1,9 @@
-package com.agusibrahim.appkasir.Fragment;
+package com.frogobox.kasir.fragment;
 
 import android.os.*;
 
-import com.agusibrahim.appkasir.Adapter.ProdukDataAdapter;
-import com.agusibrahim.appkasir.Model.Produk;
+import com.frogobox.kasir.adapter.ProdukDataAdapter;
+import com.frogobox.kasir.model.Produk;
 
 import de.codecrafters.tableview.listeners.*;
 import android.widget.*;
@@ -12,14 +12,14 @@ import android.view.*;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
 
-import com.agusibrahim.appkasir.MainActivity;
+import com.frogobox.kasir.MainActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.kennyc.bottomsheet.*;
-import com.agusibrahim.appkasir.R;
-import com.agusibrahim.appkasir.*;
-import com.agusibrahim.appkasir.Widget.*;
+import com.frogobox.kasir.R;
+import com.frogobox.kasir.*;
+import com.frogobox.kasir.widget.*;
 
 public class ProductFragment extends Fragment
 {

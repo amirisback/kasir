@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir;
+package com.frogobox.kasir;
 import android.os.*;
 import androidx.appcompat.app.*;
 import androidx.appcompat.widget.*;
@@ -11,9 +11,9 @@ import android.content.res.*;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import com.agusibrahim.appkasir.Fragment.*;
-import com.agusibrahim.appkasir.Model.Produk;
-import com.agusibrahim.appkasir.Adapter.*;
+import com.frogobox.kasir.fragment.*;
+import com.frogobox.kasir.model.Produk;
+import com.frogobox.kasir.adapter.*;
 import com.google.android.material.navigation.NavigationView;
 
 import kr.co.namee.permissiongen.*;

@@ -1,4 +1,4 @@
-package com.agusibrahim.appkasir;
+package com.frogobox.kasir;
 
 import org.junit.Test;
 

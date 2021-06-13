@@ -1,10 +1,10 @@
-package com.agusibrahim.appkasir.Model;
+package com.frogobox.kasir.model;
 
 import java.util.*;
 
 import android.database.*;
 
-import com.agusibrahim.appkasir.*;
+import com.frogobox.kasir.*;
 
 import android.content.*;
 
