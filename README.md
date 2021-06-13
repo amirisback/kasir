@@ -1,8 +1,13 @@
 ## Kasir
-Original source code [Click Here](https://github.com/agusibrahim/AppKasir-androidstudio)
+- Original source code [Click Here](https://github.com/agusibrahim/AppKasir-androidstudio)
+- Template Reuse Code For Kasir Apps
+- Template Code Monetize FrogoBox For Kasir
 
-Template Reuse Code For Kasir Apps
-Template Code Monetize FrogoBox For Kasir
+## Screen Shoot
+
+| UI 1 | UI 2 | UI 3 |
+|:----:|:----:|:----:|
+|<span align="center"><img width="200px" height="360px" src="docs/image/ss_1.png"></span> | <span align="center"><img width="200px" height="360px" src="docs/image/ss_2.png"></span> | <span align="center"><img width="200px" height="360px" src="docs/image/ss_3.png"></span> |
 
 ## Version Release
 This Is Latest Release (Still Being Developed)
