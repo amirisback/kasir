@@ -4,7 +4,7 @@ import com.agusibrahim.appkasir.Model.*;
 import android.content.*;
 import android.util.*;
 import de.codecrafters.tableview.toolkit.*;
-import android.support.v4.content.*;
+import androidx.core.content.*;
 import java.util.*;
 
 public class tabelBelanjaan extends SortableTableView<Belanjaan>

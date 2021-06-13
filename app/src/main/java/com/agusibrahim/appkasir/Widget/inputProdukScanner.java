@@ -8,7 +8,7 @@ import java.util.*;
 import com.google.zxing.*;
 import android.text.*;
 import com.agusibrahim.appkasir.Model.*;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import com.agusibrahim.appkasir.Adapter.*;
 import android.os.*;
 import com.agusibrahim.appkasir.Fragment.*;

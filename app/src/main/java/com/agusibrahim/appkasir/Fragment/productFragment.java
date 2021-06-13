@@ -1,24 +1,25 @@
 package com.agusibrahim.appkasir.Fragment;
 
-import android.app.*;
 import android.os.*;
-import android.support.v7.app.AppCompatActivity;
-import de.codecrafters.tableview.*;
-import de.codecrafters.tableview.toolkit.*;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.agusibrahim.appkasir.Adapter.ProdukDataAdapter;
 import com.agusibrahim.appkasir.Model.Produk;
-import java.util.*;
+
 import de.codecrafters.tableview.listeners.*;
 import android.widget.*;
-import android.support.v4.content.*;
+import androidx.core.content.*;
 import android.view.*;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.Toolbar;
+
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.Fragment;
+import androidx.appcompat.widget.Toolbar;
 import com.agusibrahim.appkasir.MainActivity;
-import android.support.design.widget.*;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 import com.kennyc.bottomsheet.*;
 import com.agusibrahim.appkasir.R;
-import android.content.*;
 import com.agusibrahim.appkasir.*;
 import com.agusibrahim.appkasir.Widget.*;
 

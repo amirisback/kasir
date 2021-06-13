@@ -1,19 +1,19 @@
 package com.agusibrahim.appkasir.Fragment;
-import android.support.v4.app.*;
+import androidx.core.app.*;
 import android.os.*;
 import android.view.*;
 import com.agusibrahim.appkasir.*;
 import com.agusibrahim.appkasir.Adapter.*;
-import de.codecrafters.tableview.toolkit.*;
-import java.util.*;
-import com.agusibrahim.appkasir.Model.Produk;
-import android.support.design.widget.*;
-import android.text.*;
+
 import android.widget.*;
 import com.agusibrahim.appkasir.Widget.*;
 import de.codecrafters.tableview.listeners.*;
 import com.agusibrahim.appkasir.Model.*;
-import android.support.v7.app.AlertDialog;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.Fragment;
 
 public class belanjaFragment extends Fragment
 {

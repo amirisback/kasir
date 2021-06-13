@@ -4,10 +4,9 @@ import com.agusibrahim.appkasir.*;
 import android.view.*;
 import android.widget.*;
 import com.agusibrahim.appkasir.Adapter.*;
-import android.support.v7.app.*;
-import android.support.v4.app.*;
-import android.app.Dialog;
-import android.os.*;
+import androidx.appcompat.app.*;
+import androidx.core.app.*;
+
 import com.agusibrahim.appkasir.Model.*;
 
 public class EditorDialog

@@ -1,23 +1,26 @@
 package com.agusibrahim.appkasir;
 import android.app.*;
 import android.os.*;
-import android.support.v7.app.*;
-import android.support.v4.widget.*;
-import android.support.v7.widget.*;
-import android.support.design.widget.*;
+import androidx.appcompat.app.*;
+import androidx.core.widget.*;
+import androidx.appcompat.widget.*;
+
 import android.view.*;
-import android.support.v4.view.*;
-import android.widget.Toast;
+import androidx.core.view.*;
+
 import android.content.res.*;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import com.agusibrahim.appkasir.Fragment.*;
 import com.agusibrahim.appkasir.Model.Produk;
-import java.util.*;
 import com.agusibrahim.appkasir.Adapter.*;
+import com.google.android.material.navigation.NavigationView;
+
 import kr.co.namee.permissiongen.*;
 import android.*;
-import android.support.v7.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.content.*;
 
 public class MainActivity extends AppCompatActivity
