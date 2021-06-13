@@ -1,8 +1,6 @@
 package com.agusibrahim.appkasir;
-import android.app.*;
 import android.os.*;
 import androidx.appcompat.app.*;
-import androidx.core.widget.*;
 import androidx.appcompat.widget.*;
 
 import android.view.*;
@@ -42,7 +40,7 @@ public class MainActivity extends AppCompatActivity
 		setupDrawer(nvDrawer);
 		drawerToggle= setupDrawerToggle();
 		mDrawer.addDrawerListener(drawerToggle);
-		getSupportFragmentManager().beginTransaction().replace(R.id.konten, new belanjaFragment()).commit();
+		getSupportFragmentManager().beginTransaction().replace(R.id.konten, new BelanjaFragment()).commit();
 		nvDrawer.getMenu().getItem(0).setChecked(true);
 		setTitle("Belanja");
 		reqPerms();
@@ -76,13 +74,13 @@ public class MainActivity extends AppCompatActivity
 		Fragment frag = null;
 		switch(menu.getItemId()){
 			case R.id.frag1:
-				fragclass = belanjaFragment.class;
+				fragclass = BelanjaFragment.class;
 				break;
 			case R.id.frag2:
-				fragclass=productFragment.class;
+				fragclass= ProductFragment.class;
 				break;
 			default:
-				fragclass=belanjaFragment.class;
+				fragclass= BelanjaFragment.class;
 		}
 		try{
 			frag=(Fragment) fragclass.newInstance();

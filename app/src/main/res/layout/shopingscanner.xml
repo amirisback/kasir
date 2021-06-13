@@ -1,51 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:padding="10dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
 
-	<com.journeyapps.barcodescanner.DecoratedBarcodeView
-		android:layout_height="150dp"
-		android:layout_width="match_parent"
-		android:orientation="vertical"
-		android:background="#525150"
-		android:id="@+id/scannershop"
-		android:layout_marginBottom="10dp"/>
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/scannershop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"
+        android:background="#525150"
+        android:orientation="vertical" />
 
-	<TextView
-		android:layout_height="wrap_content"
-		android:textAppearance="?android:attr/textAppearanceMedium"
-		android:layout_width="match_parent"
-		android:text="Mastin"
-		android:textColor="@color/accent"
-		android:id="@+id/scanNamaProduk"
-		android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/scanNamaProduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mastin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/accent"
+        android:visibility="invisible" />
 
-	<TextView
-		android:layout_height="wrap_content"
-		android:textAppearance="?android:attr/textAppearanceLarge"
-		android:layout_width="match_parent"
-		android:text="Rp. 0"
-		android:gravity="right"
-		android:textColor="#52B409"
-		android:textStyle="bold"
-		android:id="@+id/scanHargaProduk"
-		android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/scanHargaProduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Rp. 0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#52B409"
+        android:textStyle="bold"
+        android:visibility="invisible" />
 
-	<CheckBox
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Tanpa Konfirmasi"
-		android:id="@+id/autoaddcheck"/>
+    <CheckBox
+        android:id="@+id/autoaddcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanpa Konfirmasi" />
 
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:text="Text"
-		android:id="@+id/scanSN"
-		android:visibility="gone"/>
+    <TextView
+        android:id="@+id/scanSN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:visibility="gone" />
 
 </LinearLayout>
 

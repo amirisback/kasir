@@ -14,14 +14,14 @@ import android.os.*;
 import com.agusibrahim.appkasir.Fragment.*;
 import com.agusibrahim.appkasir.*;
 
-public class inputProdukScanner {
+public class InputProdukScanner {
 	Context ctx;
 	DecoratedBarcodeView barcodeView;
 	InputMethodManager imm;
 	private Produk produk_terindentifikasi=null;
 	AlertDialog.Builder dlg;
 	boolean lampufles=false;
-	public inputProdukScanner(Context ctx) {
+	public InputProdukScanner(Context ctx) {
 		this.ctx = ctx;
 		this.imm = (InputMethodManager) ctx.getSystemService(Context.INPUT_METHOD_SERVICE);
 		dlg = new AlertDialog.Builder(ctx);
@@ -91,7 +91,7 @@ public class inputProdukScanner {
 				public void onClick(View p1) {
 					MainActivity.dataBalanjaan.tambah(produk_terindentifikasi, -1);
 					// Update totalJumalah di BottomSheet
-					belanjaFragment.totaljum.setText("Rp. " + BelanjaanDataAdapter.PRICE_FORMATTER.format(BelanjaanDataAdapter.total));
+					BelanjaFragment.totaljum.setText("Rp. " + BelanjaanDataAdapter.PRICE_FORMATTER.format(BelanjaanDataAdapter.total));
 				}
 			});
 
@@ -112,7 +112,7 @@ public class inputProdukScanner {
 							okBtn.setEnabled(false);
 							MainActivity.dataBalanjaan.tambah(produk_terindentifikasi, -1);
 							// Update totalJumalah di BottomSheet
-							belanjaFragment.totaljum.setText("Rp. " + BelanjaanDataAdapter.PRICE_FORMATTER.format(BelanjaanDataAdapter.total));
+							BelanjaFragment.totaljum.setText("Rp. " + BelanjaanDataAdapter.PRICE_FORMATTER.format(BelanjaanDataAdapter.total));
 							// Pause dulu kamera jika sudah berhasil mengidentifikasi produk
 							// setelah 2dtk baru di resume
 							// ini utk menghindari scan beruntun, dlm waktu 2dtk jauhkan barcode dari kamera atau aplikasi akan mengupdate status Quantity-nya

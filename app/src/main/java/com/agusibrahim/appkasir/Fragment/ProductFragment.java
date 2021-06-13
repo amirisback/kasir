@@ -1,19 +1,17 @@
 package com.agusibrahim.appkasir.Fragment;
 
 import android.os.*;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.agusibrahim.appkasir.Adapter.ProdukDataAdapter;
 import com.agusibrahim.appkasir.Model.Produk;
 
 import de.codecrafters.tableview.listeners.*;
 import android.widget.*;
-import androidx.core.content.*;
 import android.view.*;
 
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.Fragment;
-import androidx.appcompat.widget.Toolbar;
+
 import com.agusibrahim.appkasir.MainActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -23,7 +21,7 @@ import com.agusibrahim.appkasir.R;
 import com.agusibrahim.appkasir.*;
 import com.agusibrahim.appkasir.Widget.*;
 
-public class productFragment extends Fragment 
+public class ProductFragment extends Fragment
 {
 	FloatingActionButton fab_addbtn;
 	CoordinatorLayout mycoor;
@@ -57,7 +55,7 @@ public class productFragment extends Fragment
 										new ProdukDialog(getActivity(), null);
 										break;
 									case R.id.tambahbanyak:
-										new inputProdukScanner(getActivity()).tambahkanProduk();
+										new InputProdukScanner(getActivity()).tambahkanProduk();
 										break;
 								}
 							}

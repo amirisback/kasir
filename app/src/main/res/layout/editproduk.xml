@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:padding="10dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
 
-	<RelativeLayout
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:orientation="horizontal"
-		android:layout_gravity="center_horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
 
-		<TextView
-			android:layout_height="wrap_content"
-			android:textAppearance="?android:attr/textAppearanceLarge"
-			android:layout_width="wrap_content"
-			android:text="Rp. 3000"
-			android:textStyle="bold"
-			android:id="@+id/hargaview"
-			android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/hargaview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Rp. 3000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
 
-		<TextView
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="X"
-			android:id="@+id/kali"
-			android:layout_toRightOf="@id/hargaview"
-			android:layout_centerVertical="true"
-			android:layout_marginRight="20dp"
-			android:layout_marginLeft="10dp"
-			android:textSize="50sp"/>
+        <TextView
+            android:id="@+id/kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/hargaview"
+            android:text="X"
+            android:textSize="50sp" />
 
-		<com.agusibrahim.appkasir.Widget.NumPik
-			android:layout_height="wrap_content"
-			android:layout_toRightOf="@id/kali"
-			android:layout_width="wrap_content"
-			android:id="@+id/numr"
-			android:layout_marginBottom="-30dp"
-			android:layout_marginTop="-30dp"/>
+        <com.agusibrahim.appkasir.Widget.NumPik
+            android:id="@+id/numr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="-30dp"
+            android:layout_toRightOf="@id/kali" />
 
-	</RelativeLayout>
+    </RelativeLayout>
 
-	<TextView
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:text="Rp. 50.000"
-		android:textStyle="bold|italic"
-		android:textColor="#2AAF0F"
-		android:textSize="30sp"
-		android:gravity="center"
-		android:id="@+id/totalview"/>
+    <TextView
+        android:id="@+id/totalview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Rp. 50.000"
+        android:textColor="#2AAF0F"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
 
 </LinearLayout>
 

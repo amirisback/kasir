@@ -1,5 +1,4 @@
 package com.agusibrahim.appkasir.Fragment;
-import androidx.core.app.*;
 import android.os.*;
 import android.view.*;
 import com.agusibrahim.appkasir.*;
@@ -12,17 +11,16 @@ import com.agusibrahim.appkasir.Model.*;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-public class belanjaFragment extends Fragment
+public class BelanjaFragment extends Fragment
 {
 	public static TextView totaljum;
 	public static BottomSheetBehavior bottomSheetBehavior;
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View v=inflater.inflate(R.layout.belanja, container, false);
-		tabelBelanjaan velanjaan=(tabelBelanjaan) v.findViewById(R.id.belanjaan);
+		TabelBelanjaan velanjaan=(TabelBelanjaan) v.findViewById(R.id.belanjaan);
 		velanjaan.setDataAdapter(MainActivity.dataBalanjaan);
 		velanjaan.addDataClickListener(new DtaClickListener());
 		velanjaan.addDataLongClickListener(new DataLongClickListener());
@@ -39,7 +37,7 @@ public class belanjaFragment extends Fragment
 		fabshop.setOnClickListener(new View.OnClickListener(){
 				@Override
 				public void onClick(View p1) {
-					new inputProdukScanner(p1.getContext()).shoping();
+					new InputProdukScanner(p1.getContext()).shoping();
 				}
 			});
 		

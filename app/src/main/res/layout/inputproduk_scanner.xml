@@ -1,71 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="wrap_content"
-	android:orientation="vertical"
-	android:padding="10dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
 
-	<com.journeyapps.barcodescanner.DecoratedBarcodeView
-		android:layout_height="150dp"
-		android:layout_width="match_parent"
-		android:orientation="vertical"
-		android:background="#525150"
-		android:id="@+id/scanner"/>
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#525150"
+        android:orientation="vertical" />
 
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:ems="10"
-		android:hint="Nama Produk"
-		android:id="@+id/new_namaproduk"/>
+    <EditText
+        android:id="@+id/new_namaproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Produk" />
 
-	<EditText
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:ems="10"
-		android:hint="Harga"
-		android:inputType="numberDecimal"
-		android:id="@+id/new_hargaproduk"/>
+    <EditText
+        android:id="@+id/new_hargaproduk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Harga"
+        android:inputType="numberDecimal" />
 
-	<EditText
-		android:layout_height="wrap_content"
-		android:inputType="number"
-		android:layout_width="wrap_content"
-		android:ems="10"
-		android:hint="Stok"
-		android:id="@+id/new_stok"/>
+    <EditText
+        android:id="@+id/new_stok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Stok"
+        android:inputType="number" />
 
-	<RelativeLayout
-		android:layout_height="wrap_content"
-		android:layout_width="wrap_content"
-		android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
 
-		<Button
-			style="?android:attr/buttonBarButtonStyle"
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Batal"
-			android:id="@+id/cancelbtn"/>
+        <Button
+            android:id="@+id/cancelbtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batal" />
 
-		<Button
-			style="?android:attr/buttonBarButtonStyle"
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Selesai"
-			android:layout_toRightOf="@id/cancelbtn"
-			android:id="@+id/selesaibtn"/>
+        <Button
+            android:id="@+id/selesaibtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cancelbtn"
+            android:text="Selesai" />
 
-		<Button
-			style="?android:attr/buttonBarButtonStyle"
-			android:layout_height="wrap_content"
-			android:layout_width="wrap_content"
-			android:text="Tambahkan"
-			android:layout_alignParentRight="true"
-			android:layout_toRightOf="@id/selesaibtn"
-			android:id="@+id/tambhakanbtn"/>
+        <Button
+            android:id="@+id/tambhakanbtn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/selesaibtn"
+            android:text="Tambahkan" />
 
-	</RelativeLayout>
+    </RelativeLayout>
 
 </LinearLayout>
 
