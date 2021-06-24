@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello_world">Hello world!</string>
-	<string name="drawer_buka">Buka</string>
-	<string name="drawer_tutup">Tutup</string>
+    <string name="drawer_buka">Buka</string>
+    <string name="drawer_tutup">Tutup</string>
 </resources>
